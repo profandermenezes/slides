@@ -1,0 +1,674 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Senai PR - Lógica de Programação</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/senai.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<div class="header">
+		<img src="img/cabecalho_fiep.png">
+	</div>
+
+	<div class="footer">
+		<img src="img/rodape_fiep.png">
+	</div>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section class="cover" data-background="img/capa_fiep.png">
+					<h2>Lógica de Programação</h2>
+					<h4>Resumo de Orientação para Estudo</h4>
+
+					<p>
+						Prof. Anderson Luiz Menezes <br>
+						Técnico em Desenvolvimento de Sistemas <br>
+						Unidade Dr. Celso Charuri
+					</p>
+
+				</section>
+
+				<section>
+
+					<section data-background="img/gifs/algorithms.gif">
+						<h2>Algoritmos</h2>
+					</section>
+
+					<section >
+
+						<h3>Definições</h3>
+
+						<p>Os algoritmos já fazem parte, naturalmente, do dia a dia das pessoas</p>
+
+						<p>Exemplos de algoritmos:</p>
+
+						<ul>
+								<li class="fragment">Instruções para a administração de medicamentos;</li>
+								<li class="fragment">Indicações de como montar/usar um aparelho;</li>
+								<li class="fragment">Uma receita culinária.</li>
+						</ul>
+		
+					</section>
+
+					<section>
+						<h3>Definições</h3>
+
+						<p>Mais formalmente...</p>
+
+						<div class="fragment fade-up">
+							<blockquote style="background-color: cadetblue">
+								"é um conjunto de regras formais para a obtenção de um resultado ou da solução de um problema." <br>
+							</blockquote>
+							<small>FORBELLONE & EBERSPACHER, 2000.</small>
+						</div>
+					</section>
+
+					<section>
+						<h3>Definições</h3>
+
+						<!-- <p>É a descrição de uma sequência de passos que deve ser seguida em código</p> -->
+						<p>Segundo <a href="https://pt.wikipedia.org/wiki/Edsger_Dijkstra">Dijkstra</a>, um algoritmo corresponde a uma descrição de um padrão de comportamento,
+							expresso em termos de um conjunto finito de ações</p>
+						<p class="fragment">Executando a operação <em>a + b</em> percebemos um padrão de comportamento, mesmo que a operação 
+							seja realizada para valores diferentes de <em>a</em> e <em>b</em></p>
+					</section>
+
+					<section>
+						<h3>Definições</h3> 
+
+						<p>Portanto, um algoritmo é uma sequência ordenada de passos a ser seguida para a realização 
+							de uma tarefa</p>
+						<p class="fragment">Computacionalmente, são passos criados a partir do <strong>entendimento lógico</strong> de um
+							problema realizado por um programador</p>
+						<p class="fragment">O objetivo é transformar esse problema em algo (um programa) que possa ser tratado e executado
+							por um computador</p>
+					</section>
+
+					<section>
+						<h3>Estrutura</h3>
+					
+						<h5 style="background-color: blue" class="fragment fade-up" background="#ddd">Entrada</h5>
+						<h5 class="fragment fade-up">&darr;</h5>
+						<h5 style="background-color: blue" class="fragment fade-up">Processamento</h5>
+						<h5 class="fragment fade-up">&darr;</h5>
+						<h5 style="background-color: blue" class="fragment fade-up">Saída</h5>
+					</section>
+
+					<section>
+						<h3>Representação</h3>
+
+						<p><strong>Linguagem natural</strong>: descrição textual da sequência de passos necessária para a
+							resolução do problema
+						</p>
+						<p class="fragment"><strong>Pseudocódigo</strong>: descrição estruturada da sequência de passos</p>
+						<p class="fragment"><strong>Fluxograma</strong>: diagrama de blocos com representação gráfica dos passos</p>
+					</section>
+
+					<section>
+						<div id="left-content">	
+							<h3>Representação</h3>
+							<h4>Exemplo de Fluxograma</h4>
+						</div>
+						<div id="right-content">
+							<img src="img/fluxograma.jpg" sizes="640px 480px">
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/gifs/languages.gif">
+						<h2 style="color: white">Linguagens de Programação</h2>
+					</section>
+
+					<section>
+						<h3>Definições</h3>
+
+						<p>São técnicas de notação para programar, com a intenção de servir de veículo
+							tanto para a expressão do raciocínio algorítmico, quanto para a execução de
+							um algoritmo por um computador
+						</p>
+
+						<p class="fragment">Como escrever programas diretamente em bits seria inviável,
+							as linguagens de programação têm o objetivo de ser compreendidas pelos humanos
+							e executáveis pelo computador
+						</p>
+
+					</section>
+
+					<section>
+						<h3>Definições</h3>
+
+						<p>São métodos padronizados para expressar instruções para um computador</p>
+
+						<p class="fragment">São conjuntos de regras sintáticas e semânticas usadas para
+							definir um programa de computador
+						</p>
+
+						<p class="fragment">Ex.: Pascal, Cobol, Java, C, C++, C#, Ruby, Python...</p>
+					</section>
+
+					<section>
+						<h3>Tipos</h3>
+
+						<dl>
+							<dt>Linguagem de máquina: binário</dt>
+							<dd class="fragment">de difícil compreensão</dd>
+							<dt>Linguagem de montagem: <a href="https://pt.wikipedia.org/wiki/Linguagem_assembly">Assembly</a></dt>
+							<dd class="fragment">de difícil compreensão</dd>
+							<dd class="fragment">há incompatibilidade entre tipos de processadores</dd>
+							<dt>Linguagens de programação</dt>
+							<dd class="fragment">mais próxima da linguagem natural</dd>
+							<dd class="fragment">necessitam de processamentos intermediários para executarem no computador</dd>
+						</dl>
+					</section>
+
+					<section>
+						<h3>Tipos</h3>
+		
+						<dl>
+							<dt>Baixo Nível</dt>
+							<dd class="fragment">mais próximas da linguagem de máquina</dd>
+							<dd class="fragment">linguagens de microprocessador e montagem</dd>
+							<dt>Alto Nível</dt>
+							<dd class="fragment">mais próximas da linguagem natural</dd>
+							<dd class="fragment">ex.: C, C++, Java, C#</dd>
+						</dl>
+					</section>
+
+					<section>
+						<h3>Processo</h3>
+						<h4>Linguagens Compiladas</h4>
+
+						<a href="http://www.if.ufrgs.br/~betz/fis01226/aula1/aula1.htm"><img src="img/comp.png"></a>
+
+						<p><small>Ex.: C, C++</small></p>
+					</section>
+
+					<section>
+						<h3>Processo</h3>
+						<h4>Linguagem Interpretada</h4>
+
+						<a href="http://www.if.ufrgs.br/~betz/fis01226/aula1/aula1.htm"><img src="img/inter.png"></a>
+
+						<p><small>Ex.: Python</small></p>
+					</section>
+
+					<section>
+						<h3>Processo</h3>
+						<h4>Linguagem Processada e Interpretada</h4>
+
+						<a href="http://www.if.ufrgs.br/~betz/fis01226/aula1/aula1.htm"><img src="img/comp_inter.png"></a>
+
+						<p><small>Ex.: Java</small></p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/gifs/logics.gif">
+						<h2>Lógica de Programação</h2>
+						<h3>Controle de Fluxo</h3>
+					</section>
+
+					<section>
+						<h3>Estrutura Sequencial</h3>
+
+						<p>Na estrutura sequencial os comandos de um algoritmo são executados numa sequência pré-estabelecida</p>
+
+						<p class="fragment">Cada comando é executado somente após o término do comando anterior</p>
+
+						<p class="fragment">A estrutura sequencial caracteriza-se, portanto, por um conjunto de comandos
+							dispostos ordenadamente
+						</p>
+					</section>
+
+					<section>
+						<h3>Estrutura Sequencial</h3>
+						<h4>Exemplo</h4>
+
+						<div data-markdown>
+							```
+							...
+							instrucao_1
+							instrucao_2
+							instrucao_3
+							...
+							```
+						</div>
+					</section>
+
+					<section>
+						<h3>Estruturas de Decisão</h3>
+						<h4>Se</h4>
+
+						<p>Nesta estrutura, uma única condição (expressão lógica) é avaliada</p>
+
+						<p class="fragment"><strong>Se</strong> o resultado desta avaliação for verdadeiro (V),
+							<span class="fragment"><strong>então</strong> um determinado conjunto de instruções é executado</p></span>
+
+						<p class="fragment"><strong>Senão</strong>, ou seja, se o resultado da avaliação for
+							falso (F), um conjunto de instruções diferentes é executado</p>
+					</section>
+
+					<section>
+						<h3>Estrutura de Decisão Se</h3>
+						<h4>Exemplo</h4>
+
+						<div data-markdown>
+							```
+							se (condicao) entao
+								instrucoes
+							senao
+								instrucoes
+							fimse
+							```
+						</div>
+					</section>
+
+					<section>
+						<h3>Estruturas de Decisão</h3>
+						<h4>Escolha</h4>
+
+						<p>Este tipo de estrutura é um generalização da estrutura <strong>Se</strong></p>
+
+						<p class="fragment">Na estrutura de decisão do tipo Escolha podem existir uma ou mais
+							possibilidades de ações a serem tomadas
+						</p>
+					</section>
+
+					<section>
+						<h3>Estrutura de Decisão Escolha</h3>
+						<h4>Exemplo</h4>
+
+						<div data-markdown>
+							```
+							escolha(variavel)
+								caso(valor_1): {instrucoes}
+								caso(valor_2): {instrucoes}
+									.
+									.
+									.
+								caso(valor_n): {instrucoes}
+								senao: {instrucoes}
+							fimescolha
+							```
+						</div>
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+
+						<p>São muito comuns as situações em que se deseja repetir um determinado trecho de um
+							programa certo número de vezes
+						</p>
+
+						<p class="fragment">Pode-se citar o caso em que se deseja realizar o mesmo
+							processamento para um conjunto de dados diferentes
+						</p>
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+
+						<p>Exemplo: o processamento da folha de pagamentos de uma empresa em que
+							exatamente o mesmo cálculo é efetuado para cada um dos funcionários
+						</p>
+	
+						<p class="fragment">As estruturas de repetição são também denominadas <strong>Laços (<em>Loops</em>)</strong></p>
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<h4>Enquanto</h4>
+
+						<p>Ao início da estrutura de repetição Enquanto, uma condição é testada</p>
+
+						<p class="fragment">Se o resultado do teste for falso, então as instruções no seu interior
+							<strong>não</strong> serão executadas e o fluxo segue normalmente para a instrução seguinte 
+							ao Fim Enquanto
+						</p>
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<h4>Enquanto</h4>
+
+						<p>Se a condição for verdadeira, as instruções <strong>serão</strong> executadas e, ao seu
+							término, retorna-se ao teste da condição
+						</p>
+	
+						<p class="fragment">Assim, o processo será repetido <strong>enquanto</strong> a condição testada
+							for verdadeira
+						</p>
+					</section>
+					
+					<section>
+						<h3>Estrutura de Repetição Enquanto</h3>
+						<h4>Exemplo</h4>
+
+						<div data-markdown>
+							```
+							{iniciar variável controle}
+							enquanto (condicao) faca
+								instrucoes
+								{atualizar variável controle}
+							fimenquanto
+							```
+						</div>
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<h4>Repita</h4>
+
+						<p>Seu funcionamento é bastante parecido ao da construção Enquanto</p> 
+						
+						<p class="fragment">A diferença é que, aqui, as instruções contidas no interior do laço serão sempre executadas 
+							pelo menos uma vez
+						</p>						
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<h4>Repita</h4>
+
+						<p>Em seguida a condição é testada. Caso ela seja verdadeira, as instruções serão executadas novamente</p>
+						
+						<p class="fragment">Este processo é repetido até que a condição seja falsa, então a execução
+							prossegue pela instrução imediatamente posterior ao fim da estrutura
+						</p>
+					</section>
+
+					<section>
+						<h3>Estrutura de Repetição Repita</h3>
+						<h4>Exemplo</h4>
+
+						<div data-markdown>
+							```
+							{iniciar variável controle}
+							repita
+								instrucoes
+								{atualizar variável controle}
+							enquanto (condicao)
+							```
+						</div>
+					</section>
+
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<h4>Para</h4>
+
+						<p>Este tipo de estrutura é útil quando se conheçe previamente o números de vezes
+							que se deseja executar determinado conjunto de comandos
+						</p>
+
+						<p class="fragment">
+							O Para nada mais é que uma estrutura dotada de mecanismos para contar o número
+							de vezes que o corpo do laço é executado
+						</p>
+					</section>
+
+					<section>
+						<h3>Estrutura de Repetição Para</h3>
+						<h4>Exemplo</h4>
+
+						<div data-markdown>
+							```
+							para ({var} = {inicial} ate {final} passo {incremento}) faca
+								instrucoes
+							fimpara
+							```
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+					<section data-background="img/gifs/math.gif">
+						<h2 style="color: white">Vetores e Matrizes</h2>
+					</section>
+
+					<section>
+						<h3>Vetores</h3>
+
+						<p>São conjuntos de variáveis do mesmo tipo acessíveis por um único nome</p>
+
+						<p class="fragment">Essas variáveis são armazenadas de forma contínua e ocupam as posições
+							de forma fixa
+						</p>
+
+						<p class="fragment">Pode-se dizer que um vetor é uma <strong>matriz unidimensional</strong></p>
+					</section>
+
+					<section>
+						<h3>Vetores</h3>
+
+						<p>Exemplo: considere uma sala de aula onde há 10 alunos e queremos armazenar suas idades em variáveis</p>
+						<ul>
+							<li class="fragment">inicialmente precisaríamos criar dez variáveis diferentes para armazenar essas idades</li>
+							<li class="fragment">utilizando vetor, basta criarmos um único com dez posições</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Vetores</h3>
+
+						<p>Uma posição do vetor é sempre acessada pelo seu nome e por um índice</p>
+						
+						<p class="fragment">No exemplo acima teríamos, por exemplo, <em>idades[5]</em>, onde <em>idades</em> é
+							o nome do vetor e <em>[5]</em> o índice (posição) que desejamos manipular
+						</p>
+					</section>
+
+					<section>
+						<h3>Matrizes</h3>
+
+						<p>Semelhante ao que foi dito sobre os vetores</p>
+
+						<p class="fragment">A diferença é que as matrizes podem ser n-dimensionais</p>
+
+						<p class="fragment">Pensando em uma matriz de duas dimensões (largura e altura), temos que considerar sua
+							quantidade de linhas e colunas
+						</p>
+
+						<p class="fragment">Seguindo no exemplo da turma de 10 alunos, podemos usar uma matriz para armazenar
+							as 4 notas de todos os alunos em uma única estrutura
+						</p>
+					</section>
+
+					<section>
+						<h3>Matrizes</h3>
+
+						<p class="fragment">Para isso precisamos de uma matriz com 10 linhas (uma para cada aluno)
+							e 4 colunas (uma para cada nota)
+						</p>
+
+						<p class="fragment">Uma posição da matriz é sempre acessada pelo seu nome e por um conjunto de índices.</p>
+
+						<p class="fragment">No exemplo acima, teríamos <em>notas[2][1]</em>, por exemplo, onde <em>notas</em> é o nome da matriz
+							e <em>[2][1]</em> os índices da linha e coluna, respectivamente.
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/gifs/functions.gif">
+						<h2>Procedimentos e Funções</h2>
+					</section>
+
+					<section>
+						<h3>Procedimentos e Funções</h3>
+						<h4>Definições</h4>
+
+						<p>Também conhecidos como sub-rotinas, são amplamente utilizados na modularização dos códigos</p>
+
+						<p class="fragment">O objetivo da utilização dos procedimentos e funções é a centralização de um trecho
+							de código que é comumente utilizado na implementação
+						</p>
+
+						<p class="fragment">Criando essas sub-rotinas evitamos a repetição desse trecho por toda a implementação</p>
+					</section>
+
+					<section>
+						<h3>Procedimentos e Funções</h3>
+						<h4>Definições</h4>
+
+						<p>Os procedimentos e as funções têm exatamente a mesma aplicação</p>
+
+						<p class="fragment">Com a diferença de que as <strong>funções retornam o resultado do processamento</strong> para quem a
+							invocou, enquanto o <strong>procedimento não retorna nada</strong>
+						</p>
+
+						<p class="fragment">É comum, portanto, que ambos sejam chamados de funções: <strong>função com retorno</strong> e
+							<strong>função sem retorno</strong>
+						</p>
+					</section>
+
+					<section>
+						<h3>Procedimentos e Funções</h3>
+						<h4>Definições</h4>
+
+						<p>As funções (e procedimentos) podem ou não receber <strong>parâmetros</strong></p>
+
+						<p class="fragment">Os parâmetros indicam as dependências dessas sub-rotinas. Ou seja, para que a sub-rotina efetue
+							seu processamento, ela pode precisar de informações que não pertencem ao seu escopo
+						</p>
+
+						<p class="fragment">Essas informações são passadas através dos parâmetros</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/gifs/pointer.gif">
+						<h2>Ponteiros</h2>
+					</section>
+
+					<section>
+						<h3>Definições</h3>
+
+						<p>Um ponteiro (ou apontador) é um tipo especial de variável qie armazena um endereço</p>
+
+						<p class="fragment">Ponteiros, na verdade, são referências para valores armazenados na memória</p>
+
+						<p class="fragment">Se um ponteiro <em>p</em> armazena o endereço de uma variável <em>i</em>, podemos
+							dizer que <em>"p aponta para i"</em> ou <em>"p é o endereço de i"</em>
+						</p>
+					</section>
+
+					<section>
+						<h3>Definições</h3>
+
+						<p>Ou ainda, em termos um pouco mais abstratos, dizemos que <em>"p é uma referência à variável i"</em></p>
+
+						<p class="fragment">Ponteiros são diretamente suportados, sem restrições, em linguagens como C e C++</p>
+
+						<p class="fragment">São utilizados para construir referências, elementos fundamentais da maioria das estruturas
+							de dados, especialmente aquelas não alocadas em um bloco contínuo de memória
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/gifs/recursive.gif">
+						<h2>Recursividade</h2>
+					</section>
+
+					<section>
+						<h3>Recursividade</h3>
+						<h4>Definições</h4>
+
+						<p>Muitos problemas têm a seguinte propriedade: cada instância do problema contém uma instância menor
+							do mesmo problema
+						</p>
+
+						<p class="fragment">Dizemos que esses problemas têm <em>estrutura recursiva</em></p>
+					</section>
+
+					<section>
+						<h3>Recursividade</h3>
+						<h4>Definições</h4>
+
+						<p>O objetivo dos algoritmos recursivos é, portanto, trabalhar com a redução de um
+							problema até a sua instância mais simples
+						</p>
+						
+						<p class="fragment">Essa instância mais simples é facilmente resolvida e serve de "guia" para a resolução das
+							demais instâncias
+						</p>
+					</section>
+
+					<section>
+						<h3>Recursividade</h3>
+						<h4>Definições</h4>
+
+						<p>O programador, portanto, só precisa mostrar como obter uma solução da instância
+							original a partir da instância menor
+						</p>
+						
+						<p class="fragment">O comportamento recursivo é implementado em funções que fazem chamadas a elas mesmas</p>
+					</section>
+
+					<section>
+						<h3>Recursividade</h3>
+						<h4>Exemplo</h4>
+
+						<p>A solução de um problema por recursão é dada como segue:</p>
+
+						<div data-markdown>
+							```k
+							Se for a instância mais simples então
+								{resolva-a diretamente}
+								{retorne o resultado}
+							Senão
+								{reduza-a a uma instância menor}
+								{tente novamente submetendo-a à mesma função}
+							Fim Se
+							```
+						</div>
+					</section>
+				</section>
+
+				<section data-background="img/contracapa_fiep.png"></section>
+				
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+
+	
+
+</html>
